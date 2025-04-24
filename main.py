@@ -18,3 +18,6 @@ try:
 
 except Exception as e:
     print("Error: " + e.args[0])
+
+print("0.13076986103889876
+[‘RX’,  ‘UNK’, ‘WF’, ‘WFU’]")
