@@ -6,10 +6,10 @@ def unique_values(table, field):  ##uses list comprehension
         return sorted({row[0] for row in cursor})
 
 try:
-    arcpy.env.workspace = "M:/Prog/attribute"
+    arcpy.env.workspace = "C:\Users\jlwan\Downloads\mtbs_perimeter_data"
 
     start = timeit.default_timer()
-    vals = unique_values("mtbs_fod_pts_20170501.shp","Fire_Type")
+    vals = unique_values("mtbs_perims_DD.shp","Fire_Type")
 
     stop = timeit.default_timer()
     total_time = stop - start
